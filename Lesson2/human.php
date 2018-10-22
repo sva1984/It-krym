@@ -1,5 +1,7 @@
 <?php
-class Human {
+
+class Human
+{
 
     private $fio;
     private $age;
@@ -12,9 +14,10 @@ class Human {
 
     public function __toString() //преобразовали класс в строку и вернули
     {
-        return  'FIO ' . $this->fio . PHP_EOL . "Age " . $this->age;
+        return 'FIO ' . $this->fio . PHP_EOL . "Age " . $this->age;
     }
 }
+
 require 'student.php';
 include 'sotrudnik.php';
 
@@ -24,7 +27,7 @@ echo $objHuman . PHP_EOL;
 
 $objStudent = new Student('Petrov P.P', 21, 3, '3,4,5');
 echo $objStudent . PHP_EOL;
-echo $objStudent->getGrade().PHP_EOL;
+echo $objStudent->getGrade() . PHP_EOL;
 
 $objSotrudnik = new Sotrudnik('Sidoroff F.F.', 30, 50000);
 echo $objSotrudnik . PHP_EOL;

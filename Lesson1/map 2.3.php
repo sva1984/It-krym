@@ -1,7 +1,7 @@
 <?php
 function square($n)
 {
-    return($n * $n);
+    return ($n * $n);
 }
 
 $a = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
